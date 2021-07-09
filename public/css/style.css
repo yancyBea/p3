@@ -1,0 +1,149 @@
+@media screen and (max-width: 667px) and (min-width:375px) {
+    body {
+        margin: 0px;
+    }
+
+    header img {
+        width      : 200px;
+        margin-left: 87px;
+    }
+
+    .localisation {
+        background-color: #F2F2F2;
+    }
+
+    .loca {
+        background-color: gray;
+        height          : 40px;
+    }
+
+    .loca p {
+        padding: 10px;
+    }
+
+    .localisation h1 {
+        text-align: center;
+        font-size : 25px;
+    }
+
+    .localisation p {
+        text-align: center;
+    }
+
+    button {
+        background-color: #9356DC;
+        box-shadow      : 0px 10px 10px 0px #b8b8b8;
+        color           : white;
+        border-radius   : 25px;
+        height          : 40px;
+        margin-bottom   : 40px;
+        margin-left     : 110px;
+        border          : none;
+    }
+
+    h2,
+    h3 {
+        font-size  : 25px;
+        margin-left: 35px;
+        padding-top: 40px;
+    }
+
+    .fonctionnements div {
+        background-color: #fafafa;
+        box-shadow      : 0px 10px 10px 0px #b8b8b8;
+        display         : block ruby;
+        margin          : 30px;
+        border-radius   : 20px;
+        height          : 60px;
+    }
+
+    .fonc-chif {
+        background-color: #9356DC;
+        height          : 18px;
+        width           : 18px;
+        color           : white;
+        border-radius   : 25px;
+        text-align      : center;
+        position        : relative;
+        right           : 10px;
+        padding         : 5px;
+    }
+
+    .fonctionnements div :nth-child(2) {
+        margin-left: 10px;
+    }
+
+    .fonctionnements div :nth-child(3) {
+        margin-left: 20px;
+    }
+
+    .fonctionnements :nth-child(4) {
+        background-color: #eed9fa;
+    }
+
+    .fonctionnements :nth-child(4) :nth-child(2) {
+        color: #9356DC;
+    }
+
+    main {
+        background-color: #F2F2F2;
+    }
+
+    main a {
+        padding: 10px;
+    }
+
+    main figure {
+        border-radius: 20px;
+        box-shadow   : 0px 10px 10px 0px #b8b8b8;
+    }
+
+    main figcaption {
+        height     : 65px;
+        margin-left: 10px;
+        color      : black;
+    }
+
+    main img {
+        width        : 295px;
+        height       : 200px;
+        object-fit   : cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    main i {
+        position: relative;
+        left    : 245px;
+        bottom  : 50px;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    h4 {
+        font-size  : 20px;
+        margin     : 0;
+        margin-left: 15px;
+        padding-top: 20px;
+    }
+
+    h4,
+    footer a {
+        color: white;
+    }
+
+    footer div {
+        padding: 5px;
+        display: grid;
+    }
+
+    footer a {
+        padding: 10px;
+    }
+
+}
