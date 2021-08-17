@@ -44,20 +44,23 @@ button {
     border          : none;
     margin          : 20px;
 }
-.fonctionnements section{
-    display: flex;
-    flex-flow: wrap row;
+
+.fonctionnements section {
+    display        : flex;
+    flex-flow      : wrap row;
+    justify-content: space-around;
 }
 
 .fonctionnements div {
     background-color: #fafafa;
-    box-shadow: 0px 10px 10px 0px #b8b8b8;
-    margin: 30px;
-    border-radius: 20px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    box-shadow      : 0px 10px 10px 0px #b8b8b8;
+    margin          : 30px;
+    border-radius   : 20px;
+    height          : 60px;
+    display         : flex;
+    flex-flow       : row wrap;
+    align-items     : center;
+    width           : 240px;
 }
 
 .fonc-chif {
@@ -71,6 +74,7 @@ button {
     right           : 10px;
     padding         : 5px;
 }
+
 .fonctionnements div :nth-child(2) {
     margin-left: 10px;
 }
@@ -79,30 +83,36 @@ button {
     margin-left: 20px;
 }
 
-.fonctionnements .violet{
+.fonctionnements .violet {
     background-color: #eed9fa;
 }
 
 .fonctionnements .violet :nth-child(2) {
     color: #9356DC;
 }
+
 main {
     background-color: #F2F2F2;
-   
+
 }
 
 
-h2{
-    margin-left: 30px;
+h2 {
+    margin: 20px;
+    padding: 30px;
 }
-.container{
-    display: flex;
-    flex-wrap: wrap;
+
+.container {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
 }
 
 main figure {
     border-radius: 20px;
     box-shadow   : 0px 10px 10px 0px #b8b8b8;
+    width        : 600px;
+    height       : 450px;
 }
 
 main figcaption {
@@ -112,27 +122,32 @@ main figcaption {
 }
 
 main img {
-    width        : 300px;
-    height       : 200px;
+    width        : 600px;
+    height       : 360px;
     object-fit   : cover;
     border-radius: 20px 20px 0px 0px;
 }
+
 a {
     text-decoration: none;
 }
-figcaption div{
-    position: relative;
-    display: flex;
+
+figcaption div {
+    position : relative;
+    display  : flex;
     flex-flow: column;
-    margin: 10px 10px;
+    margin   : 10px 10px;
 }
-figcaption div i{
+
+figcaption div i {
     position: absolute;
-right: 45px;
+    right   : 45px;
 }
+
 footer {
     background-color: black;
 }
+
 h3 {
     font-size  : 20px;
     margin     : 0;
@@ -146,11 +161,54 @@ footer a {
 }
 
 footer div {
-    padding: 5px;
-   display: flex;
-   flex-flow: column;
+    padding        : 5px;
+    display        : flex;
+    flex-flow      : row wrap;
+    justify-content: space-around;
 }
 
 footer a {
     padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+
+/* ecran un peu plus grand qu'une tablette */
+@media screen and (max-width: 1355px) and (min-width:1024px) {
+    main figure {
+        width : 900px;
+        height: 750px;
+    }
+
+    main img {
+        width : 900px;
+        height: 660px;
+    }
+
+}
+
+
+/* telephone */
+@media screen and (max-width: 667px){
+    main figure {
+        width : 300px;
+        height: 290px;
+    }
+    main img {
+        width : 300px;
+        height: 200px;
+    }
+    footer div{
+        flex-flow: column;
+    }
 }
