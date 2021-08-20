@@ -1,3 +1,41 @@
-body{
-    background-color: whitesmoke;
+body {
+    padding: 0;
+    margin : 0;
+}
+
+header {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-flow: column;
+     img {
+        width  : 200px;
+        padding: 20px;
+    }
+}
+main{
+    position: relative;
+    .pos-img{
+        position: absolute;
+        z-index: 0;
+   img{
+       width: 100px;
+       height: 100px;
+    object-fit   : cover;
+   }
+    }
+    section{
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+.rec{
+    background-color: gray;
+    p{
+        margin: 0;
+    }
 }

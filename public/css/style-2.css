@@ -1,5 +1,44 @@
 body {
-  background-color: whitesmoke;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+header img {
+  width: 200px;
+  padding: 20px;
+}
+
+main {
+  position: relative;
+}
+main .pos-img {
+  position: absolute;
+  z-index: 0;
+}
+main .pos-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+main section {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.rec {
+  background-color: gray;
+}
+.rec p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style-2.css.map */
