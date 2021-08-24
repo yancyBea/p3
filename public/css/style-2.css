@@ -14,31 +14,37 @@ header img {
   padding: 20px;
 }
 
+.fond {
+  width: 100vw;
+}
+
 main {
-  position: relative;
+  margin-top: -40px;
 }
-main .pos-img {
-  position: absolute;
-  z-index: 0;
-}
-main .pos-img img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-main section {
+
+section {
   z-index: 1;
   position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
+  background-color: #f6f6f6;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
-
-.rec {
-  background-color: gray;
+section .rec {
+  background-color: #ffffff;
+  margin: 15px;
+  position: relative;
+  height: 50px;
+  width: 330px;
 }
-.rec p {
+section .rec p {
   margin: 0;
+}
+section .rec span {
+  position: absolute;
+  right: 5px;
 }
 
 /*# sourceMappingURL=style-2.css.map */
