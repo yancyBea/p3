@@ -24,6 +24,18 @@ main {
 
 }
 
+.titre {
+    display  : flex;
+    flex-flow: row wrap;
+    position : relative;
+
+    i {
+        position: absolute;
+        left    : 220px;
+        top     : 25px;
+    }
+}
+
 section {
     z-index                : 1;
     position               : relative;
@@ -34,20 +46,74 @@ section {
     border-top-left-radius : 35px;
     border-top-right-radius: 35px;
 
+    h2 {
+        margin: 0px;
+    }
+
+    hr {
+        background-color: #99e2d0;
+        height          : 2px;
+        margin          : 0px;
+        border          : none;
+        width           : 45px;
+    }
+
     .rec {
         background-color: #ffffff;
         margin          : 15px;
         position        : relative;
         height          : 50px;
         width           : 330px;
+        border-radius   : 15px;
+        display         : flex;
+        flex-flow       : column;
+        justify-content : center;
+    }
 
-        p {
-            margin: 0;
-        }
+    h3,p {
+        margin     : 0;
+        margin-left: 15px;
+    }
 
-        span {
-            position: absolute;
-            right   : 5px;
-        }
+    span {
+        position: absolute;
+        right   : 5px;
+        top     : 17px;
+    }
+}
+
+button {
+    background: linear-gradient(90deg, rgba(228,112,218,1) 0%, rgba(228,112,218,1) 35%, rgba(175,95,219,1) 100%);
+    box-shadow      : 0px 10px 10px 0px #b8b8b8;
+    color           : white;
+    border-radius   : 25px;
+    height          : 40px;
+    border          : none;
+    margin          : 20px;
+    width           : 150px;
+}
+
+footer {
+    background-color: #353535;
+
+    h4 {
+        font-size  : 20px;
+        margin     : 0;
+        margin-left: 15px;
+        padding-top: 20px;
+        color      : white;
+    }
+
+    div {
+        padding        : 5px;
+        display        : flex;
+        flex-flow      : row wrap;
+        justify-content: space-around;
+    }
+
+    a {
+        color          : white;
+        padding        : 10px;
+        text-decoration: none;
     }
 }
