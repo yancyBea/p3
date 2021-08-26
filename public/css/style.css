@@ -2,6 +2,13 @@ body {
     padding: 0;
     margin : 0;
 }
+h1,h2,h3,h4{
+    font-family: 'Shrikhand', sans-serif;
+}
+p,
+a{
+    font-family: 'Roboto', sans-serif;
+}
 
 header {
     display        : flex;
@@ -30,6 +37,7 @@ header img {
 }
 .loca p{
     color: #353535;
+    margin: revert;
 }
 
 h1 {
@@ -42,7 +50,7 @@ h1 {
 }
 
 button {
-    background-color: #9356DC;
+    background: linear-gradient(90deg, rgba(228,112,218,1) 0%, rgba(228,112,218,1) 35%, rgba(175,95,219,1) 100%);
     box-shadow      : 0px 10px 10px 0px #b8b8b8;
     color           : white;
     border-radius   : 25px;
@@ -60,7 +68,7 @@ button {
 .fonctionnements div {
     background-color: #fafafa;
     box-shadow      : 0px 10px 10px 0px #b8b8b8;
-    margin          : 30px;
+    margin          : 15px;
     border-radius   : 20px;
     height          : 60px;
     display         : flex;
@@ -82,11 +90,11 @@ button {
 }
 
 .fonctionnements div :nth-child(2) {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .fonctionnements div :nth-child(3) {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .fonctionnements .violet {
@@ -144,24 +152,28 @@ figcaption div {
     flex-flow: column;
     margin   : 10px 10px;
 }
+figcaption div h3, p{
+    margin: 0;
+}
 
 figcaption div i {
     position: absolute;
-    right   : 45px;
+    right   : 20px;
+    font-size: 25px;
 }
 
 footer {
     background-color: #353535;
 }
 
-h3 {
+h4 {
     font-size  : 20px;
     margin     : 0;
     margin-left: 15px;
     padding-top: 20px;
 }
 
-h3,
+h4,
 footer a {
     color: white;
 }
