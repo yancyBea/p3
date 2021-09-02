@@ -50,6 +50,7 @@ section {
         margin: 0px;
         font-weight: normal;
         color: #383838;
+        margin-left: 15px;
     }
 
     hr {
@@ -58,14 +59,15 @@ section {
         margin          : 0px;
         border          : none;
         width           : 45px;
+        margin-left: 15px;
     }
 
     .rec {
         background-color: #ffffff;
         margin          : 15px;
         position        : relative;
-        height          : 50px;
-        width           : 330px;
+        height          : 60px;
+        width           : 350px;
         border-radius   : 15px;
         display         : flex;
         flex-flow       : column;
@@ -74,7 +76,7 @@ section {
     }
 
     h3,p {
-        margin     : 0;
+        margin     : 3px;
         margin-left: 15px;
         font-size: medium;
     }
@@ -82,7 +84,7 @@ section {
     span {
         position: absolute;
         right   : 5px;
-        top     : 17px;
+        top     : 20px;
     }
 }
 
@@ -111,13 +113,57 @@ footer {
     div {
         padding        : 5px;
         display        : flex;
-        flex-flow      : row wrap;
-        justify-content: space-around;
+        flex-flow      : column;
     }
+    
+    i{
+        margin-right: 10px;
+        }
 
     a {
         color          : white;
         padding        : 10px;
         text-decoration: none;
+    }
+}
+
+
+
+
+// media queries
+
+
+/*  tablette et ecran plus grand */
+@media screen and (max-width: 1024px) and (min-width: 667px) {
+    .fond {
+      width: 70vh;
+      width: 100vw;
+      height: 40vh;
+      object-fit: cover;
+    }
+    section .rec {
+    height: 70px;
+    width: 470px;
+  }
+   section h3{
+      font-size: x-large;
+    } 
+    section p{
+      
+    font-size: larger;
+    }
+    section span{
+      
+    font-size: larger;
+    }
+  }
+
+
+
+
+/* telephone */
+@media screen and (max-width: 667px) {
+    .fond {
+        width: 100vw;
     }
 }

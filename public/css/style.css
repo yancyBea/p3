@@ -2,11 +2,16 @@ body {
     padding: 0;
     margin : 0;
 }
-h1,h2,h3,h4{
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Shrikhand', sans-serif;
 }
+
 p,
-a{
+a {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -27,17 +32,22 @@ header img {
     flex-direction  : column;
     text-align      : center;
     background-color: #F2F2F2;
-    align-items: center;
+    align-items     : center;
 }
 
 .loca {
     background-color: #eaeaea;
-    width: 100%;
-    border-top: solid #d5d5d5 3px;
+    width           : 100%;
+    box-shadow      : 0px -5px 0px 0px rgba(213, 213, 213, 0.89);
 }
-.loca p{
-    color: #353535;
+
+.loca p {
+    color : #353535;
     margin: revert;
+}
+
+.loca i {
+    margin-right: 5px;
 }
 
 h1 {
@@ -45,18 +55,20 @@ h1 {
 }
 
 .localisation :nth-child(3) {
-    font-size: 20px;
+    font-size: 18px;
     margin   : 0;
 }
 
 button {
-    background: linear-gradient(90deg, rgba(228,112,218,1) 0%, rgba(228,112,218,1) 35%, rgba(175,95,219,1) 100%);
-    box-shadow      : 0px 10px 10px 0px #b8b8b8;
-    color           : white;
-    border-radius   : 25px;
-    height          : 40px;
-    border          : none;
-    margin          : 20px;
+    background   : linear-gradient(90deg, rgba(228, 112, 218, 1) 0%, rgba(228, 112, 218, 1) 35%, rgba(175, 95, 219, 1) 100%);
+    box-shadow   : 0px 10px 10px 0px #b8b8b8;
+    color        : white;
+    border-radius: 25px;
+    height       : 50px;
+    border       : none;
+    margin       : 20px;
+    width        : 200px;
+    font-size    : 16px;
 }
 
 .fonctionnements section {
@@ -74,7 +86,7 @@ button {
     display         : flex;
     flex-flow       : row wrap;
     align-items     : center;
-    width           : 240px;
+    width           : 330px;
 }
 
 .fonc-chif {
@@ -90,7 +102,7 @@ button {
 }
 
 .fonctionnements div :nth-child(2) {
-    margin-left: 5px;
+    margin-left: 30px;
 }
 
 .fonctionnements div :nth-child(3) {
@@ -113,7 +125,6 @@ main {
 
 h2 {
     margin: 20px;
-    padding: 30px;
 }
 
 .container {
@@ -127,6 +138,19 @@ main figure {
     box-shadow   : 0px 10px 10px 0px #b8b8b8;
     width        : 600px;
     height       : 450px;
+}
+
+.nouveau {
+    position        : absolute;
+    bottom          : 13em;
+    left            : 15em;
+    width           : 5em;
+    background-color: aquamarine;
+    height          : 2em;
+    align-items     : center;
+    display         : none;
+    justify-content : center;
+    color: cadetblue;
 }
 
 main figcaption {
@@ -152,13 +176,15 @@ figcaption div {
     flex-flow: column;
     margin   : 10px 10px;
 }
-figcaption div h3, p{
-    margin: 0;
+
+figcaption div h3,
+p {
+    margin: 5px;
 }
 
 figcaption div i {
-    position: absolute;
-    right   : 20px;
+    position : absolute;
+    right    : 20px;
     font-size: 25px;
 }
 
@@ -181,8 +207,10 @@ footer a {
 footer div {
     padding        : 5px;
     display        : flex;
-    flex-flow      : row wrap;
-    justify-content: space-around;
+    flex-flow      : column;
+}
+footer i{
+margin-right: 10px;
 }
 
 footer a {
@@ -217,16 +245,26 @@ footer a {
 
 
 /* telephone */
-@media screen and (max-width: 667px){
+@media screen and (max-width: 667px) {
+
+    h1 {
+        max-width: 255px;
+    }
+
+    .localisation :nth-child(3) {
+        max-width: 351px;
+    }
+
     main figure {
-        width : 300px;
+        width : 350px;
         height: 290px;
     }
+
     main img {
-        width : 300px;
+        width : 350px;
         height: 200px;
     }
-    footer div{
-        flex-flow: column;
+    .nouveau{
+        display: flex;
     }
 }
