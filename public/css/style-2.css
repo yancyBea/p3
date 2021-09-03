@@ -116,7 +116,7 @@ footer a {
 }
 
 /*  tablette et ecran plus grand */
-@media screen and (max-width: 1024px) and (min-width: 667px) {
+@media screen and (min-width: 667px) {
   .fond {
     width: 70vh;
     width: 100vw;
