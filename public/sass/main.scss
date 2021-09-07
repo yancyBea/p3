@@ -2,6 +2,17 @@ body {
     padding: 0;
     margin : 0;
 }
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Shrikhand', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Roboto', sans-serif;
+}
 
 header {
     display        : flex;
@@ -12,6 +23,19 @@ header {
     img {
         width  : 200px;
         padding: 20px;
+    }
+}
+div.titre{
+    width: 520px;
+    h1{
+        margin-left: 25px;
+        text-transform: uppercase;
+    }
+  i{
+        font-size: 1.5em;
+        position: absolute;
+        left: initial;
+        right: 10px;
     }
 }
 
@@ -45,12 +69,16 @@ section {
     background-color       : #f6f6f6;
     border-top-left-radius : 35px;
     border-top-right-radius: 35px;
-
+    max-width: 850px;
+    margin: 0 auto;
+.compartiment{
+    margin-bottom: 2em;
+}
     h2 {
         margin: 0px;
         font-weight: normal;
         color: #383838;
-        margin-left: 15px;
+        margin-left: 25px;
     }
 
     hr {
@@ -59,12 +87,12 @@ section {
         margin          : 0px;
         border          : none;
         width           : 45px;
-        margin-left: 15px;
+        margin-left: 25px;
     }
 
     .rec {
         background-color: #ffffff;
-        margin          : 15px;
+        margin          : 25px;
         position        : relative;
         height          : 60px;
         width           : 350px;
@@ -97,6 +125,9 @@ button {
     border          : none;
     margin          : 20px;
     width           : 150px;
+    margin-bottom: 7em;
+    font-size: 15px;
+font-weight: bolder;
 }
 
 footer {
@@ -165,5 +196,8 @@ footer {
 @media screen and (max-width: 667px) {
     .fond {
         width: 100vw;
+    }
+    div.titre{
+        width: 380px;
     }
 }

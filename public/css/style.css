@@ -57,27 +57,34 @@ h1 {
 .localisation :nth-child(3) {
     font-size: 18px;
     margin   : 0;
+    /*! font-weight: 100; */
+    /*! font-weight: 400; */
+    /*! font-variant: jis78; */
 }
 
 button {
-    background   : linear-gradient(90deg, rgba(228, 112, 218, 1) 0%, rgba(228, 112, 218, 1) 35%, rgba(175, 95, 219, 1) 100%);
-    box-shadow   : 0px 10px 10px 0px #b8b8b8;
-    color        : white;
+    background: linear-gradient(90deg, rgba(228, 112, 218, 1) 0%, rgba(228, 112, 218, 1) 35%, rgba(175, 95, 219, 1) 100%);
+    box-shadow: 0px 10px 10px 0px #b8b8b8;
+    color: white;
     border-radius: 25px;
-    height       : 50px;
-    border       : none;
-    margin       : 20px;
-    width        : 200px;
-    font-size    : 16px;
+    height: 50px;
+    border: none;
+    margin: 20px;
+    width: 230px;
+    font-size: 15px;
+    font-weight: bolder;
 }
-
+.bloc{
+    max-width: 1000px;
+margin: 0 auto;
+}
 .fonctionnements section {
     display        : flex;
     flex-flow      : wrap row;
     justify-content: space-around;
 }
 
-.fonctionnements div {
+.fonctionnements div{
     background-color: #fafafa;
     box-shadow      : 0px 10px 10px 0px #b8b8b8;
     margin          : 15px;
@@ -86,7 +93,8 @@ button {
     display         : flex;
     flex-flow       : row wrap;
     align-items     : center;
-    width           : 330px;
+    width           : 100%;
+    max-width: 400px;
 }
 
 .fonc-chif {
@@ -97,16 +105,16 @@ button {
     border-radius   : 25px;
     text-align      : center;
     position        : relative;
-    right           : 10px;
+    right           : 15px;
     padding         : 5px;
 }
 
 .fonctionnements div :nth-child(2) {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .fonctionnements div :nth-child(3) {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .fonctionnements .violet {
@@ -122,9 +130,8 @@ main {
 
 }
 
-
 h2 {
-    margin: 20px;
+    margin-left: 15px;
 }
 
 .container {
@@ -136,19 +143,20 @@ h2 {
 main figure {
     border-radius: 20px;
     box-shadow   : 0px 10px 10px 0px #b8b8b8;
-    width        : 600px;
+    max-width        : 700px;
     height       : 450px;
+    width: 100%;
 }
 
 .nouveau {
     position        : absolute;
-    bottom          : 13em;
-    left            : 15em;
+    bottom: 24em;
+    left            : 35em;
     width           : 5em;
     background-color: aquamarine;
     height          : 2em;
     align-items     : center;
-    display         : none;
+    display         : flex;
     justify-content : center;
     color: cadetblue;
 }
@@ -160,7 +168,7 @@ main figcaption {
 }
 
 main img {
-    width        : 600px;
+    width        : 700px;
     height       : 360px;
     object-fit   : cover;
     border-radius: 20px 20px 0px 0px;
@@ -179,7 +187,7 @@ figcaption div {
 
 figcaption div h3,
 p {
-    margin: 5px;
+    margin: 7px;
 }
 
 figcaption div i {
@@ -230,18 +238,7 @@ footer a {
 
 
 /* ecran un peu plus grand qu'une tablette */
-@media screen and (max-width: 1355px) and (min-width:1024px) {
-    main figure {
-        width : 530px;
-        height: 370px;
-    }
 
-    main img {
-        width : 530px;
-        height: 290px;
-    }
-
-}
 
 
 /* telephone */
@@ -265,6 +262,8 @@ footer a {
         height: 200px;
     }
     .nouveau{
-        display: flex;
+        /*! display: flex; */
+        left: 15em;
+        bottom: 14em;
     }
 }
