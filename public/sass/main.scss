@@ -100,10 +100,16 @@ section {
         display         : flex;
         flex-flow       : column;
         justify-content : center;
-        box-shadow: 0px 10px 10px 0px #cacaca
+        box-shadow: 0px 10px 10px 0px #cacaca;
+        animation: slide 5s;
     }
 
-    h3,p {
+    h3{
+        margin     : 3px;
+        margin-left: 15px;
+        font-style: larger;
+    }
+    p {
         margin     : 3px;
         margin-left: 15px;
         font-size: medium;
@@ -127,7 +133,7 @@ button {
     width           : 150px;
     margin-bottom: 7em;
     font-size: 15px;
-font-weight: bolder;
+    font-weight: bolder;
 }
 
 footer {
@@ -157,7 +163,16 @@ footer {
         text-decoration: none;
     }
 }
-
+@keyframes slide{
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 
 
@@ -176,9 +191,7 @@ footer {
     height: 70px;
     width: 470px;
   }
-   section h3{
-      font-size: x-large;
-    } 
+
     section p{
       
     font-size: larger;
