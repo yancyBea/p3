@@ -19,7 +19,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
+  flex-flow: row;
+  position: relative;
+}
+header a {
+  position: absolute;
+  left: 2em;
+  color: gray;
+}
+header a:hover {
+  color: black;
 }
 header img {
   width: 200px;

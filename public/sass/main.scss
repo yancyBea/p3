@@ -18,8 +18,17 @@ header {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    flex-flow      : column;
+    flex-flow      : row;
+    position: relative;
 
+    a{
+        position: absolute;
+        left: 2em;
+        color: gray;
+    }
+    a:hover{
+        color: black;
+    }
     img {
         width  : 200px;
         padding: 20px;
