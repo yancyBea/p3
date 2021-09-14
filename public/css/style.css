@@ -85,7 +85,7 @@ button {
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    /*! padding: 30px 5%; */
+    padding: 30px 5%
 }
 
 .fonctionnements section {
@@ -106,10 +106,6 @@ button {
     width           : 100%;
     max-width: 400px;
 }
-.fonctionnements div:hover{
-    transform: scale(1.10);
-  }
-
 
 .fonc-chif {
     background-color: #9356DC;
@@ -164,10 +160,9 @@ main figure {
     max-width        : 500px;
     margin: 0;
     margin-bottom: 35px;
+    /* height       : 450px; */
+    /* width: 100%; */
 }
-main figure:hover{
-    transform: scale(1.10);
-  }
 
 .nouveau {
     position        : absolute;
@@ -199,9 +194,8 @@ main img {
 a {
     text-decoration: none;
     position: relative;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
-    display: flex;
 }
 
 figcaption div {
